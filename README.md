@@ -26,3 +26,12 @@ $$P(Y|do(X)) = P(Y)$$ if there is no causal path from $X$ to $Y$.
 **What is Confounding?** A confounding factor is anything that makes $P(Y|do(X))$ different than $P(Y|X)$. Confoundings are variables that inherently affect our observed variable. We should always discover our confounding variables to formulate and optimize our problem in the best way.
 
 **What is causal effect?** It means quantifying causal impact of $X$ on $Y$. We can do this by doWhy + enonml Python packages. For instance, [see this code](causal_inference/Causal_inference.ipynb).
+
+**What is causal discovery?** It means how to find causal model of data from its statistics. Causal discovery is a kind of inverse problem. In the following, I mention there tricks for causal discovery. A sample of practical causal discovery can be found in [this page](causal_discovery/causal_discovery.ipynb).
+- Conditional independence testing: It means $X \mathrel{\unicode{x2AEB}} Y \Leftrightarrow P(X,Y) = P(X)P(Y)$. Conditional independence testing works like constraint-based approaches. This trick is being used in _PC algorithm_, _Fast Causal Inference (FCI)_, and _Inductive Causation_.
+- Greedy search of DAG space: In this approaches, we can start with either a full-connected graph, or a graph without any edges, and continue towards greedy search in these spaces. This trick is being used in _Greedy Equivalence Search (GES)_, _Greedy Interventional Equivalence Search (GIES)_, and _Concave Penalized Coordinate Descent with Reparametrization (CCDr)_.
+- Exploiting Asymmetries: In the following, I mention three flavors of asymetries. This trick is being used in _Linear Non-Gaussian Acyclic Model (LiNGAM)_, _Nonlinear Additive Noise Model_, _Post-nonlinear Causal Model (PCM)_, and _Granger Causality_.
+    + Time asymetry
+    + Complexity
+    + Functional
+- Hybrid approaches: This trick is being used in _Structural Agnostic Modeling (SAM)_, _Causal Additive Model (CAM)_, and _Causal Generative Neural Network (CGNN)_.
