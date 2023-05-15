@@ -25,7 +25,7 @@ $$P(Y|do(X)) = P(Y)$$ if there is no causal path from $X$ to $Y$.
 
 **What is Confounding?** A confounding factor is anything that makes $P(Y|do(X))$ different than $P(Y|X)$. Confoundings are variables that inherently affect our observed variable. We should always discover our confounding variables to formulate and optimize our problem in the best way.
 
-**What is causal effect?** It means quantifying causal impact of $X$ on $Y$. We can do this by doWhy + enonml Python packages. For instance, [see this code](causal_inference/Causal_inference.ipynb).
+**What is causal effect?** It means quantifying causal impact of $X$ on $Y$. We can do this by doWhy + econml Python packages. For instance, [see this code](causal_inference/Causal_inference.ipynb).
 
 **What is causal discovery?** It means how to find causal model of data from its statistics. Causal discovery is a kind of inverse problem. In the following, I mention there tricks for causal discovery. A sample of practical causal discovery can be found in [this page](causal_discovery/causal_discovery.ipynb).
 - Conditional independence testing: It means $X \mathrel{\unicode{x2AEB}} Y \Leftrightarrow P(X,Y) = P(X)P(Y)$. Conditional independence testing works like constraint-based approaches. This trick is being used in _PC algorithm_, _Fast Causal Inference (FCI)_, and _Inductive Causation_.
