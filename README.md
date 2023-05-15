@@ -35,3 +35,5 @@ $$P(Y|do(X)) = P(Y)$$ if there is no causal path from $X$ to $Y$.
     + Complexity
     + Functional
 - Hybrid approaches: This trick is being used in _Structural Agnostic Modeling (SAM)_, _Causal Additive Model (CAM)_, and _Causal Generative Neural Network (CGNN)_.
+
+**Granger Causality**: Granger causality is a statistical hypothesis test used to determine whether one time series is useful in forecasting another. Granger Causality is based on the idea that if a time series $X$ can provide statistically significant information about the future values of time series $Y$, then $X$ is said to Granger-cause $Y$.
