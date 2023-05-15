@@ -3,7 +3,7 @@ This repository contains my notes, highlights, and codes in my self-study proces
 
 ## Causality videos of [Shawhin Talebi](https://www.youtube.com/watch?v=WqASiuM4a-A&list=PLz-ep5RbHosVVTz9HEzpI4d6xpWsc8rOa) from Youtube
 
-**What is causality?** X causes Y if when all cofounders are adjusted, an interevention in X results in a change in Y, but the vice versa is not true.
+**What is causality?** X causes Y if when all confounders are adjusted, an interevention in X results in a change in Y, but the vice versa is not true.
 
 **How to formulate causality?** We cannot use basic algebra to formulate causality because algebra is symmetric and causality effect does not follow symmetric rules. Therefore, we should use an asymmetric formulation. To this end, we use *Structural Causal Models (SCMs)*. SCMs include the following models:
 - Directed Acyclic Graphs (DAGs): In these graphs, edges are directed. It means that information through edges flow in one direction. Also, they called acyclic becuase if we move toward edges, we cannot return back to the same vertex.
